@@ -22,6 +22,7 @@ public class AppTest {
     private File loadFile(String filePath) {
         ClassLoader classLoader = getClass().getClassLoader();
         File fileToValidate = new File(classLoader.getResource(filePath).getFile());
+        System.out.println(fileToValidate.getAbsolutePath());
         return fileToValidate;
     }
 
