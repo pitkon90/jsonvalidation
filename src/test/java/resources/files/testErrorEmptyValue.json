@@ -1,0 +1,27 @@
+[
+  {
+    "web_pages": [
+      "https://www.cstj.qc.ca",
+      "https://ccmt.cstj.qc.ca",
+      "https://ccml.cstj.qc.ca"
+    ],
+    "name": {},
+    "alpha_two_code": "CA",
+    "state-province": null,
+    "domains": [],
+    "country": "Canada"
+  },
+  {
+    "web_pages": [
+      "https://www.cstj.qc.ca"
+    ],
+    "name": {
+      "firstName": "Sandra",
+      "lastName": "Bullock"
+    },
+    "alpha_two_code": "CA",
+    "state-province": null,
+    "domains": [],
+    "country": "Canada"
+  }
+]

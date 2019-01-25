@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "properties": {
+    "web_pages":{
+      "type":"array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "name":{
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "alpha_two_code":{
+      "type": [
+        "null",
+        "string"
+      ],
+      "minLength": 2
+    },
+    "state-province":{
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "domains":{
+      "type":"array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "country":{
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  },
+  "required": [ "web_pages", "name", "alpha_two_code", "state-province", "domains", "country" ]
+}
