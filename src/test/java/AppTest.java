@@ -6,6 +6,7 @@ import org.junit.Test;
 import validator.util.JsonSchemaValidator;
 
 import java.io.File;
+import java.util.logging.Logger;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.*;
@@ -13,6 +14,7 @@ import static org.junit.Assert.*;
 public class AppTest {
 
     JsonSchemaValidator validator;
+    private static final Logger logger = Logger.getLogger(JsonSchemaValidator.class.getName());
 
 
     @Before public  void setUp() {
@@ -22,7 +24,7 @@ public class AppTest {
     private File loadFile(String filePath) {
         ClassLoader classLoader = getClass().getClassLoader();
         File fileToValidate = new File(classLoader.getResource(filePath).getFile());
-        System.out.println(fileToValidate.getAbsolutePath());
+        logger.info(fileToValidate.getAbsolutePath());
         return fileToValidate;
     }
 
