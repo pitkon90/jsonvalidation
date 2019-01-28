@@ -6,6 +6,7 @@ import org.junit.Test;
 import validator.util.JsonSchemaValidator;
 
 import java.io.File;
+import java.net.URLDecoder;
 import java.util.logging.Logger;
 
 import static org.hamcrest.Matchers.is;
@@ -23,8 +24,7 @@ public class AppTest {
 
     private File loadFile(String filePath) {
         ClassLoader classLoader = getClass().getClassLoader();
-        File fileToValidate = new File(classLoader.getResource(filePath).getFile());
-        logger.severe(fileToValidate.getAbsolutePath());
+        File fileToValidate = new File(URLDecoder.decode(classLoader.getResource(filePath).getFile()));
         return fileToValidate;
     }
 
